@@ -63,7 +63,7 @@
             internal static string firstName = "//*[@data-test-id='firstname']";
             internal static string lastName = "//*[@data-test-id='lastname']";
             internal static string phoneNumber = "//*[@data-test-id='telephone']";
-            internal static string topoFlex = "//*[@id=\"root\"]/div[1]/main/div[1]/div[3]/ul/div";
+            internal static string topoFlex = "//*[@id='root']/div[1]/main/div[1]/div[3]/ul/div";
             internal static string prisijungti = "//*[@data-test-id='checkout-login-btn']";
             internal static string username = "//*[@data-test-id='username']";
             internal static string password = "//*[@data-test-id='password']";
