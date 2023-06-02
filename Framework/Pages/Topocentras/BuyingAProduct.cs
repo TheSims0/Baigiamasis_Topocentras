@@ -49,7 +49,6 @@
             Common.WaitUntilElementIsVisibleAndClickable(Locators.BuyingAProduct.topoFlex);
             Common.ScrollUntilElementIsClickable(Locators.BuyingAProduct.buyButton);
             Common.Click(Locators.BuyingAProduct.buyButton);
-            
         }
 
         public static void FinishCheckOut()
