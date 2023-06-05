@@ -4,6 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+
 namespace Framework.Pages
 {
     public class Common

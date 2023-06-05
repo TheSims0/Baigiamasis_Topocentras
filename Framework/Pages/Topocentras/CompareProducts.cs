@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+
 namespace Framework.Pages.Topocentras
 {
     public class CompareProducts
