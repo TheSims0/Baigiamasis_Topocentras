@@ -9,6 +9,7 @@ namespace Tests.Topocentras
         public void TC01_BuyAProductWhileLoggedIn()
         {
             string expectedResult = "Patvirtinti užsakymą";
+            
             BuyingAProduct.NavigateToProductPage();
             BuyingAProduct.AddProductToCart();
             BuyingAProduct.GoToCheckOut();
@@ -16,6 +17,7 @@ namespace Tests.Topocentras
             BuyingAProduct.LogIn();
             BuyingAProduct.FinishCheckOut();
             string actualResult = BuyingAProduct.CheckIfSubmitOrderReached();
+            
             Assert.AreEqual(expectedResult, actualResult);
         }
     }

@@ -8,11 +8,13 @@ namespace Tests.Topocentras
         [Test]
         public void TC01_AddProductsToCart()
         {
+            string expectedResult = "4";
+
             AddToCart.ClickOnProduct();
             AddToCart.AddProductsToCart();
             AddToCart.GoToCart();
             string actualResult = AddToCart.GetTotalProducts();
-            string expectedResult = "4";
+            
             Assert.AreEqual(expectedResult, actualResult);
         }
     }

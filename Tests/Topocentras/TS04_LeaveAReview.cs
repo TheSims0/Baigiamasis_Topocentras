@@ -9,9 +9,11 @@ namespace Tests.Topocentras
         public void TC01_LeaveA5StarReview()
         {
             string expectedResult = "Jūsų apžvalga pateikta!";
+            
             LeavingAReview.NavigateToProductPage();
             LeavingAReview.WriteAReview();
             string actualResult = LeavingAReview.GetReviewConfirmation(expectedResult);
+            
             StringAssert.Contains(expectedResult, actualResult);
         }
     }

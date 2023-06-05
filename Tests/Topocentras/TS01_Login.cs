@@ -8,13 +8,15 @@ namespace Tests.Topocentras
         [Test]
         public void TC01_LoginUsingValidData()
         {
+            string expectedResult = "Simonas";
+
             HomePage.ClickPrisijungti();
             HomePage.EnterEmail();
             HomePage.EnterPassword();
             HomePage.ClickPrisijungtiInLoginMenu();
             HomePage.ClickManoPaskyra();
-            string expectedResult = "Simonas";
             string actualResult = HomePage.ReadUserName(expectedResult);
+            
             StringAssert.Contains(expectedResult, actualResult);
         }
     }
