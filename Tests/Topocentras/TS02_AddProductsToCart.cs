@@ -1,6 +1,7 @@
 ﻿using Framework.Pages.Topocentras;
 using NUnit.Framework;
 using Tests.BaseTests;
+
 namespace Tests.Topocentras
 {
     internal class TS02_AddProductsToCart : BaseTest
@@ -8,13 +9,13 @@ namespace Tests.Topocentras
         [Test]
         public void TC01_AddProductsToCart()
         {
-            AddToCart.Open();
-            AddToCart.CloseCookies();
+            string expectedResult = "4";
+
             AddToCart.ClickOnProduct();
             AddToCart.AddProductsToCart();
             AddToCart.GoToCart();
             string actualResult = AddToCart.GetTotalProducts();
-            string expectedResult = "4";
+            
             Assert.AreEqual(expectedResult, actualResult);
         }
     }

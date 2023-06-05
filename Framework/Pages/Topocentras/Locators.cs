@@ -2,6 +2,11 @@
 {
     internal static class Locators
     {
+        internal static class Home
+        {
+            internal static string cookies = "//*[@class='CookieConsent-actions-F41']";
+        }
+
         internal static class Login
         {
             internal static string prisijungti = "//*[@id='root']/header[1]/div[1]/div[1]/div[2]/button";
@@ -17,7 +22,6 @@
             internal static string butineTechnika = "(//*[@class='DesktopMenu-tabUrl-26S'])[2]";
             internal static string kaitlentes = "//*[@id='desktopMenu']/ul/li[1]/div/ul[3]/section[2]/h5[2]";
             internal static string addToCart = "(//*[@data-test-id='add-to-cart-btn'])[position()>=1 and position()<=4]";
-            internal static string cookies = "//*[@class='CookieConsent-actions-F41']";
             internal static string goToCart = "(//*[@class='Cart-checkoutLink-1fD'])[1]";
             internal static string totalProducts = "//*[@class='Products-productInfoContainer-1yU']";
             internal static string closePopUp = "//*[@class='Modal-closeButton-Ri_']";

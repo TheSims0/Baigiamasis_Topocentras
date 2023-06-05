@@ -1,6 +1,7 @@
 ﻿using Framework.Pages.Topocentras;
 using NUnit.Framework;
 using Tests.BaseTests;
+
 namespace Tests.Topocentras
 {
     internal class TS05_BuyAProduct : BaseTest
@@ -9,8 +10,7 @@ namespace Tests.Topocentras
         public void TC01_BuyAProductWhileLoggedIn()
         {
             string expectedResult = "Patvirtinti užsakymą";
-            BuyingAProduct.Open();
-            BuyingAProduct.CloseCookies();
+            
             BuyingAProduct.NavigateToProductPage();
             BuyingAProduct.AddProductToCart();
             BuyingAProduct.GoToCheckOut();
@@ -18,6 +18,7 @@ namespace Tests.Topocentras
             BuyingAProduct.LogIn();
             BuyingAProduct.FinishCheckOut();
             string actualResult = BuyingAProduct.CheckIfSubmitOrderReached();
+            
             Assert.AreEqual(expectedResult, actualResult);
         }
     }
