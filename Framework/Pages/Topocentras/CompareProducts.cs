@@ -3,16 +3,6 @@ namespace Framework.Pages.Topocentras
 {
     public class CompareProducts
     {
-        public static void Open()
-        {
-            Driver.OpenPage("https://www.topocentras.lt/");
-        }
-
-        public static void CloseCookies()
-        {
-            Common.Click(Locators.AddToCart.cookies);
-        }
-
         public static void ClickOnProductPage()
         {
             Common.HoverOnElement(Locators.CompareProducts.zaidimuErdve);

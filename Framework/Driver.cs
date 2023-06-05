@@ -12,9 +12,10 @@ namespace Framework
         public static void InitializeDriver()
         {
             ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--window-size=1920,1080");
-            options.AddArgument("--headless=new");
+            //options.AddArgument("--window-size=1920,1080");
+            //options.AddArgument("--headless");
             driver.Value = new ChromeDriver(options);
+            driver.Value.Manage().Window.Maximize();
         }
 
         internal static IWebDriver GetDriver()

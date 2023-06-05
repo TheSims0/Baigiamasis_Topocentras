@@ -2,11 +2,6 @@
 {
     public class AddToCart
     {
-        public static void Open()
-        {
-            Driver.OpenPage("https://www.topocentras.lt/");
-        }
-
         public static void ClickOnProduct()
         {
             Common.HoverOnElement(Locators.AddToCart.butineTechnika);
@@ -18,11 +13,6 @@
             Common.WaitUntilElementIsVisibleAndClickable(Locators.AddToCart.addToCart);
             Common.ScrollUntilElementIsClickable(Locators.AddToCart.addToCart);
             Common.ClickElementsInListAndClosePopUp(Locators.AddToCart.addToCart, Locators.AddToCart.closePopUp);
-        }
-
-        public static void CloseCookies()
-        {
-            Common.Click(Locators.AddToCart.cookies);
         }
 
         public static void GoToCart()

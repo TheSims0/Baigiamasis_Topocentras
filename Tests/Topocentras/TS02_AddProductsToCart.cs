@@ -8,8 +8,6 @@ namespace Tests.Topocentras
         [Test]
         public void TC01_AddProductsToCart()
         {
-            AddToCart.Open();
-            AddToCart.CloseCookies();
             AddToCart.ClickOnProduct();
             AddToCart.AddProductsToCart();
             AddToCart.GoToCart();

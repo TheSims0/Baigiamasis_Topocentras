@@ -8,8 +8,6 @@ namespace Tests.Topocentras
         [Test]
         public void TC01_CompareThreeProducts()
         {
-            CompareProducts.Open();
-            CompareProducts.CloseCookies();
             CompareProducts.ClickOnProductPage();
             CompareProducts.AddProductsToCompare();
             CompareProducts.GoToComparePage();

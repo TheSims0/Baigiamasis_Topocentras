@@ -8,6 +8,11 @@
             Driver.OpenPage("https://www.topocentras.lt/");
         }
 
+        public static void CloseCookies()
+        {
+            Common.Click(Locators.Home.cookies);
+        }
+
         public static void ClickPrisijungti()
         {
             Common.Click(Locators.Login.prisijungti);

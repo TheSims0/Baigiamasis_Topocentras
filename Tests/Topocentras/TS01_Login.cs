@@ -8,7 +8,6 @@ namespace Tests.Topocentras
         [Test]
         public void TC01_LoginUsingValidData()
         {
-            HomePage.Open();
             HomePage.ClickPrisijungti();
             HomePage.EnterEmail();
             HomePage.EnterPassword();

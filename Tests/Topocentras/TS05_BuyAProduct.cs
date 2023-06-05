@@ -9,8 +9,6 @@ namespace Tests.Topocentras
         public void TC01_BuyAProductWhileLoggedIn()
         {
             string expectedResult = "Patvirtinti užsakymą";
-            BuyingAProduct.Open();
-            BuyingAProduct.CloseCookies();
             BuyingAProduct.NavigateToProductPage();
             BuyingAProduct.AddProductToCart();
             BuyingAProduct.GoToCheckOut();
