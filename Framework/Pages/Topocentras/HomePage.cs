@@ -1,6 +1,6 @@
 ﻿namespace Framework.Pages.Topocentras
 {
-    public class TopocentrasHomePage
+    public class HomePage
     {
 
         public static void Open()

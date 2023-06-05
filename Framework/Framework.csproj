@@ -57,7 +57,7 @@
     <Compile Include="Pages\Topocentras\CompareProducts.cs" />
     <Compile Include="Pages\Topocentras\LeavingAReview.cs" />
     <Compile Include="Pages\Topocentras\Locators.cs" />
-    <Compile Include="Pages\Topocentras\TopocentrasHomePage.cs" />
+    <Compile Include="Pages\Topocentras\HomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

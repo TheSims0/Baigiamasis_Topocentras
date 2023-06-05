@@ -8,14 +8,14 @@ namespace Tests.Topocentras
         [Test]
         public void TC01_LoginUsingValidData()
         {
-            TopocentrasHomePage.Open();
-            TopocentrasHomePage.ClickPrisijungti();
-            TopocentrasHomePage.EnterEmail();
-            TopocentrasHomePage.EnterPassword();
-            TopocentrasHomePage.ClickPrisijungtiInLoginMenu();
-            TopocentrasHomePage.ClickManoPaskyra();
+            HomePage.Open();
+            HomePage.ClickPrisijungti();
+            HomePage.EnterEmail();
+            HomePage.EnterPassword();
+            HomePage.ClickPrisijungtiInLoginMenu();
+            HomePage.ClickManoPaskyra();
             string expectedResult = "Simonas";
-            string actualResult = TopocentrasHomePage.ReadUserName(expectedResult);
+            string actualResult = HomePage.ReadUserName(expectedResult);
             StringAssert.Contains(expectedResult, actualResult);
         }
     }
