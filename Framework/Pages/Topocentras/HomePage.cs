@@ -18,14 +18,14 @@
             Common.Click(Locators.Login.prisijungti);
         }
 
-        public static void EnterEmail()
+        public static void EnterEmail(string email)
         {
-            Common.SendKeys(Locators.Login.enterEmail, "baigiamasisms2023@gmail.com");
+            Common.SendKeys(Locators.Login.enterEmail, email);
         }
 
-        public static void EnterPassword()
+        public static void EnterPassword(string password)
         {
-            Common.SendKeys(Locators.Login.enterPassword, "Nesakysiu123@");
+            Common.SendKeys(Locators.Login.enterPassword, password);
         }
 
         public static void ClickPrisijungtiInLoginMenu()
