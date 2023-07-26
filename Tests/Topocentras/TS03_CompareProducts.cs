@@ -1,6 +1,8 @@
 ﻿using Framework.Pages.Topocentras;
 using NUnit.Framework;
+using System.Collections.Generic;
 using Tests.BaseTests;
+
 namespace Tests.Topocentras
 {
     internal class TS03_CompareProducts : BaseTest
@@ -8,12 +10,12 @@ namespace Tests.Topocentras
         [Test]
         public void TC01_CompareThreeProducts()
         {
-            CompareProducts.Open();
-            CompareProducts.CloseCookies();
             CompareProducts.ClickOnProductPage();
             CompareProducts.AddProductsToCompare();
             CompareProducts.GoToComparePage();
-            Assert.That(CompareProducts.GetElementText(), Is.Unique);
+            List<string> productNames = CompareProducts.GetElementText();
+
+            Assert.That(productNames, Is.Unique);
         }
     }
 }

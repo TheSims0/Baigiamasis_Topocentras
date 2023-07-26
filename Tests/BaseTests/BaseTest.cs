@@ -1,6 +1,8 @@
 ﻿using Framework;
 using NUnit.Framework.Interfaces;
 using NUnit.Framework;
+using Framework.Pages.Topocentras;
+
 namespace Tests.BaseTests
 {
     [Parallelizable]
@@ -10,6 +12,8 @@ namespace Tests.BaseTests
         public void SetUp()
         {
             Driver.InitializeDriver();
+            HomePage.Open();
+            HomePage.CloseCookies();
         }
 
         [TearDown]

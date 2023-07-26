@@ -5,17 +5,19 @@ namespace Tests.Topocentras
 {
     internal class TS01_Login : BaseTest
     {
-        [Test]
-        public void TC01_LoginUsingValidData()
+        [TestCase("baigiamasisms2023@gmail.com", "Nesakysiu123@")]
+        public void TC01_LoginUsingValidData(string email, string password)
         {
-            TopocentrasHomePage.Open();
-            TopocentrasHomePage.ClickPrisijungti();
-            TopocentrasHomePage.EnterEmail();
-            TopocentrasHomePage.EnterPassword();
-            TopocentrasHomePage.ClickPrisijungtiInLoginMenu();
-            TopocentrasHomePage.ClickManoPaskyra();
+            
             string expectedResult = "Simonas";
-            string actualResult = TopocentrasHomePage.ReadUserName(expectedResult);
+
+            HomePage.ClickPrisijungti();
+            HomePage.EnterEmail(email);
+            HomePage.EnterPassword(password);
+            HomePage.ClickPrisijungtiInLoginMenu();
+            HomePage.ClickManoPaskyra();
+            string actualResult = HomePage.ReadUserName(expectedResult);
+            
             StringAssert.Contains(expectedResult, actualResult);
         }
     }
